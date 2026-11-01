@@ -55,7 +55,6 @@ Set `HF_HUB_OFFLINE=1 TRANSFORMERS_OFFLINE=1` on the HPC, because it has no inte
 - Single-user verification accuracy dropped from 92% to 42% at one point, and we did not find the cause.
 - Some stored watermark texts contain leftover prompt wording (for example "Your refined text"). The validation check let them through.
 - The green-word test ran at temperature 0.7. The RAG pipeline runs near temperature 0.01, which we did not test. Paraphrasing attacks were not tested.
-- Poisoning and other attacks are described in our threat model framework but were not run.
 - Only 3 test users were used.
 
 ## Credits
